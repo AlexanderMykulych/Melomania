@@ -46,7 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\Database\IRepository.cs" />
     <Compile Include="DataBase\DataBaseContext.cs" />
+    <Compile Include="Entity\Comment.cs" />
+    <Compile Include="Entity\Image.cs" />
+    <Compile Include="Entity\Item_Info.cs" />
     <Compile Include="Entity\Music.cs" />
     <Compile Include="Entity\Music_Info.cs" />
     <Compile Include="Entity\User.cs" />
@@ -54,6 +58,14 @@
     <Compile Include="Migrations\201502102118484_AddMusic.cs" />
     <Compile Include="Migrations\201502102118484_AddMusic.Designer.cs">
       <DependentUpon>201502102118484_AddMusic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502102131113_AddItemInfo.cs" />
+    <Compile Include="Migrations\201502102131113_AddItemInfo.Designer.cs">
+      <DependentUpon>201502102131113_AddItemInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201502102137010_AddAvatar.cs" />
+    <Compile Include="Migrations\201502102137010_AddAvatar.Designer.cs">
+      <DependentUpon>201502102137010_AddAvatar.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -65,6 +77,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201502102118484_AddMusic.resx">
       <DependentUpon>201502102118484_AddMusic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502102131113_AddItemInfo.resx">
+      <DependentUpon>201502102131113_AddItemInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502102137010_AddAvatar.resx">
+      <DependentUpon>201502102137010_AddAvatar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

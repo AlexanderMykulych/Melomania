@@ -14,6 +14,8 @@ namespace Mlm.Domain.Entity
         public int Id { get; set; }
         public string Login { get; set; }
         public string Password { get; set; }
+
+        public Image Avatar { get; set; }
         public User_Info Information { get; set; }
 
     }

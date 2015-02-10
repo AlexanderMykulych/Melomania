@@ -9,7 +9,7 @@ namespace Mlm.Domain.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(Mlm.Domain.DataBase.DataBaseContext context)
