@@ -1,0 +1,10 @@
+E:\AllProject\Melomania\Melomania\Mlm.Domain\bin\Debug\Mlm.Domain.dll.config
+E:\AllProject\Melomania\Melomania\Mlm.Domain\bin\Debug\Mlm.Domain.dll
+E:\AllProject\Melomania\Melomania\Mlm.Domain\bin\Debug\Mlm.Domain.pdb
+E:\AllProject\Melomania\Melomania\Mlm.Domain\bin\Debug\EntityFramework.dll
+E:\AllProject\Melomania\Melomania\Mlm.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\AllProject\Melomania\Melomania\Mlm.Domain\bin\Debug\EntityFramework.xml
+E:\AllProject\Melomania\Melomania\Mlm.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.csprojResolveAssemblyReference.cache
+E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.dll
+E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.pdb
