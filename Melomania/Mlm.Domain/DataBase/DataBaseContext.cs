@@ -16,5 +16,7 @@ namespace Mlm.Domain.DataBase
         }
 
         public DbSet<User> Users { get; set; }
+
+        public DbSet<Music> Musics { get; set; }
     }
 }

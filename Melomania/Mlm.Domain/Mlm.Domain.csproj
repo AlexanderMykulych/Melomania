@@ -47,14 +47,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase\DataBaseContext.cs" />
+    <Compile Include="Entity\Music.cs" />
+    <Compile Include="Entity\Music_Info.cs" />
     <Compile Include="Entity\User.cs" />
     <Compile Include="Entity\User_Info.cs" />
+    <Compile Include="Migrations\201502102118484_AddMusic.cs" />
+    <Compile Include="Migrations\201502102118484_AddMusic.Designer.cs">
+      <DependentUpon>201502102118484_AddMusic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201502102118484_AddMusic.resx">
+      <DependentUpon>201502102118484_AddMusic.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

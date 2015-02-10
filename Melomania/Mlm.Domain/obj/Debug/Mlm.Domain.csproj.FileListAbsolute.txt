@@ -8,3 +8,5 @@ E:\AllProject\Melomania\Melomania\Mlm.Domain\bin\Debug\EntityFramework.SqlServer
 E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.csprojResolveAssemblyReference.cache
 E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.dll
 E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.pdb
+E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.Migrations.AddMusic.resources
+E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.csproj.GenerateResource.Cache
