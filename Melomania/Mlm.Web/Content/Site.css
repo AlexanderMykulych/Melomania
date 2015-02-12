@@ -231,3 +231,17 @@ h1 {
     width: 200px;
     height: 200px;
 }
+
+div.list-group li
+{
+  color: #a94442;
+  background-color: #f2dede;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  border-radius: 10px;
+}

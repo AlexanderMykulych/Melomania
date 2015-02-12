@@ -13,6 +13,7 @@ namespace Mlm.Web.Controllers
         //
         // GET: /Start/
         DataBaseContext _db = new DataBaseContext();
+        [Authorize]
         public ActionResult Index()
         {
             return View();

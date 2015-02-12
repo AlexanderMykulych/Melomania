@@ -8,31 +8,38 @@
     <div class="row">
         <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
             @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { role = "form" }))
-            {  
+            {
+                @Html.ValidationSummary("Fixed it pls:", new { @class = "list-group" })
+                
                 <h2>Please Sign Up</h2>
                 <hr class="colorgraph">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
-                            <input type="text" name="Name" id="first_name" class="form-control input-lg" placeholder="Name" tabindex="1">
+                            <input type="text" name="Name" id="first_name" class="form-control input-lg" placeholder="Name" tabindex="1" value="@Model.Name"/> 
+                            @Html.ValidationMessageFor(x => x.Name)
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
-                            <input type="text" name="Surname" id="last_name" class="form-control input-lg" placeholder="Surname" tabindex="2">
+                            <input type="text" name="Surname" value="@Model.Surname" id="last_name" class="form-control input-lg" placeholder="Surname" tabindex="2">
+                            @Html.ValidationMessageFor(x => x.Surname)
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="Login" id="display_name" class="form-control input-lg" placeholder="Login" tabindex="3">
+                    <input type="text" name="Login" id="display_name" value="@Model.Login" class="form-control input-lg" placeholder="Login" tabindex="3">
+                    @Html.ValidationMessageFor(x => x.Login)
                 </div>
                 <div class="form-group">
-                    <input type="email" name="Address" id="email" class="form-control input-lg" placeholder="Email Address" tabindex="4">
-                </div>
+                    <input type="email" name="Address" id="email" value="@Model.Address" class="form-control input-lg" placeholder="Email Address" tabindex="4">
+                    @Html.ValidationMessageFor(x => x.Address)
+                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="form-group">
                             <input type="password" name="Password" id="password" class="form-control input-lg" placeholder="Password" tabindex="5">
+                            @Html.ValidationMessageFor(x => x.Password)
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6">
@@ -41,18 +48,17 @@
                         </div>
                     </div>
                 </div>
-               
+
 
                 <hr class="colorgraph">
                 <div class="row">
                     <div class="col-xs-12 col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
                     <div class="col-xs-12 col-md-6">
-                    @Html.ActionLink("Sign In", "Login", "Account", null, new { @class = "btn btn-success btn-block btn-lg"})
+                        @Html.ActionLink("Sign In", "Login", "Account", null, new { @class = "btn btn-success btn-block btn-lg" })
                     </div>
                 </div>
             }
         </div>
     </div>
-    
-</div><!-- /.modal -->
 
+</div><!-- /.modal -->
