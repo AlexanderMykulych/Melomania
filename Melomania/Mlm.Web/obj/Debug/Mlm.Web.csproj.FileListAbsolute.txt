@@ -28,3 +28,6 @@ E:\AllProject\Melomania\Melomania\Mlm.Web\obj\Debug\Mlm.Web.dll
 E:\AllProject\Melomania\Melomania\Mlm.Web\obj\Debug\Mlm.Web.pdb
 E:\AllProject\Melomania\Melomania\Mlm.Web\bin\EntityFramework.SqlServer.dll
 E:\AllProject\Melomania\Melomania\Mlm.Web\bin\EntityFramework.SqlServer.xml
+E:\AllProject\Melomania\Melomania\Mlm.Web\bin\Ninject.dll
+E:\AllProject\Melomania\Melomania\Mlm.Web\bin\Ninject.xml
+E:\AllProject\Melomania\Melomania\Mlm.Web\bin\System.Web.Providers.xml

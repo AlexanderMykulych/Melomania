@@ -1,0 +1,41 @@
+﻿@model Mlm.Web.Models.UserLogin
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row login_box">
+        <div class="col-md-12 col-xs-12" align="center">
+            <div class="line"><h3>@DateTime.Now.ToShortTimeString()</h3></div>
+            <div class="outter"><img src="~/Content/Image/log_2.jpg" class="image-circle" /></div>
+            <h1>Hi Guest</h1>
+        </div>
+       
+        
+
+        <div class="col-md-12 col-xs-12 login_control">
+
+            @using(Html.BeginForm("Login", "Acount", FormMethod.Post))
+            { 
+                <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
+            	<div class="control">
+            	    <div class="label">Email Address</div>
+            	    <input type="text" class="form-control" placeholder="email@gmail.com" name="Login" value="@Model.Login"/>
+            	</div>
+            	
+            	<div class="control">
+            	    <div class="label">Password</div>
+            	    <input type="password" class="form-control" placeholder="123456" name="Password" value="@Model.Password" />
+            	</div>
+            	<div align="center">
+            	    <input type="submit" class="btn btn-orange" value="Sign In"/>
+            	</div>
+            }
+
+        </div>
+
+
+
+    </div>
+</div>
