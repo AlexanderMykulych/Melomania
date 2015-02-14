@@ -69,6 +69,10 @@
     <Compile Include="Migrations\201502102137010_AddAvatar.Designer.cs">
       <DependentUpon>201502102137010_AddAvatar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201502142326405_AddMusicMimeType.cs" />
+    <Compile Include="Migrations\201502142326405_AddMusicMimeType.Designer.cs">
+      <DependentUpon>201502142326405_AddMusicMimeType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -85,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201502102137010_AddAvatar.resx">
       <DependentUpon>201502102137010_AddAvatar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201502142326405_AddMusicMimeType.resx">
+      <DependentUpon>201502142326405_AddMusicMimeType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

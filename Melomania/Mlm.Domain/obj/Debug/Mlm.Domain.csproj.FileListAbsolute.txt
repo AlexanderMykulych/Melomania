@@ -12,3 +12,4 @@ E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.Migrations.Add
 E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.csproj.GenerateResource.Cache
 E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.Migrations.AddItemInfo.resources
 E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.Migrations.AddAvatar.resources
+E:\AllProject\Melomania\Melomania\Mlm.Domain\obj\Debug\Mlm.Domain.Migrations.AddMusicMimeType.resources

@@ -12,6 +12,7 @@ namespace Mlm.Domain.Entity
     {
         public Guid Id { get; set; }
         public byte[] Track { get; set; }
+        public string MimeType { get; set; }
         public Music_Info Information { get; set; }
         public Item_Info Item_Information { get; set; }
     }

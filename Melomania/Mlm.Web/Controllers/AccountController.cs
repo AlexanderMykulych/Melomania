@@ -39,7 +39,10 @@ namespace Mlm.Web.Controllers
         {
             if (ModelState.IsValid && WebSecurity.Login(model.Login, model.Password, true))
             {
-                return Redirect(returnUrl);
+                if (!Url.IsLocalUrl(returnUrl))
+                    return RedirectToAction("Index", "Profile");
+                else
+                    return Redirect(returnUrl);
             }
             return View(model);
 
@@ -70,7 +73,7 @@ namespace Mlm.Web.Controllers
                                 });
 
                         WebSecurity.Login(model.Login, model.Password);
-                        return RedirectToAction("Index", "Start");
+                        return RedirectToAction("Index", "Profile");
                     }
                     catch (MembershipCreateUserException e)
                     {
