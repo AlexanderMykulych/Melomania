@@ -1,0 +1,10 @@
+﻿@model Mlm.Web.Models.ProfileModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Profile_Layout.cshtml";
+}
+
+<div class="container">
+    @Html.Partial("UserInfo", Model)
+</div>
+    

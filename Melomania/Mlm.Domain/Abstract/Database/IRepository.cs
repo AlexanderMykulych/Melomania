@@ -14,6 +14,8 @@ namespace Mlm.Domain.Abstract.Database
 
         void Add(User user);
         void Add(Music music);
-         
+
+
+        void SaveChange();
     }
 }

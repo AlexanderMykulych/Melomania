@@ -27,3 +27,5 @@ E:\AllProject\Melomania\Melomania\Mlm.Tests\bin\Debug\EntityFramework.xml
 E:\AllProject\Melomania\Melomania\Mlm.Tests\obj\Debug\Mlm.Tests.csprojResolveAssemblyReference.cache
 E:\AllProject\Melomania\Melomania\Mlm.Tests\obj\Debug\Mlm.Tests.dll
 E:\AllProject\Melomania\Melomania\Mlm.Tests\obj\Debug\Mlm.Tests.pdb
+E:\AllProject\Melomania\Melomania\Mlm.Tests\bin\Debug\Ninject.dll
+E:\AllProject\Melomania\Melomania\Mlm.Tests\bin\Debug\Ninject.xml

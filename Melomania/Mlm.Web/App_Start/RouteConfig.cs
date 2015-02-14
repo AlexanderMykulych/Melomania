@@ -16,7 +16,7 @@ namespace Mlm.Web
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Start", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Profile", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

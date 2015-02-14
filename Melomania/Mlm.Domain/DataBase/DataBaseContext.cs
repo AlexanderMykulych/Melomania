@@ -56,5 +56,10 @@ namespace Mlm.Domain.DataBase
             Musics.Add(music);
             SaveChanges();
         }
+
+        public void SaveChange()
+        {
+            SaveChanges();
+        }
     }
 }

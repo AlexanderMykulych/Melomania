@@ -1,0 +1,36 @@
+﻿@model Mlm.Web.Models.ProfileModel
+@{
+    ViewBag.Title = "Manage";
+    Layout = "~/Views/Shared/_Profile_Layout.cshtml";
+}
+
+<div class="row">
+    @Html.Partial("UserInfo", Model)
+</div>
+<div class="row">
+    <div class="col-lg-4">
+
+        <fieldset class="panel panel-default">
+            <div class="panel-body">
+                <legend>Load new image</legend>
+                @using (Html.BeginForm("ChangeAvatar", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <img id="new_image" class="img-circle" width="250" src="@Url.Action("GetImage_By_UserId", "Account")" />
+                    <input type="file" id="file_img" name="image" class="btn btn-default" />
+                    <input type="submit" value="Setup" class="btn btn-success" />
+                }
+            </div>
+        </fieldset>
+    </div>
+    <div class="col-lg-4">
+
+        <fieldset class="panel panel-default">
+            <div class="panel-body">
+                <legend>Change Password</legend>
+                    @Html.Partial("_ChangePassword")
+            </div>
+        </fieldset>
+    </div>
+</div>
+
+

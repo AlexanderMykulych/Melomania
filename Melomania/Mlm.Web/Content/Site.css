@@ -219,6 +219,27 @@ h1 {
         color: #FFF !important;
     }
 
+.btn-blue {
+    background-color: #1669ea;
+    border-radius: 0px;
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: inherit;
+}
+
+.btn-blue:hover {
+    background-color: #3c23e0;
+    border-radius: 0px;
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: inherit;
+    color: #FFF !important;
+}
+
 .line {
     border-bottom: 2px solid #F32D27;
 }
@@ -232,16 +253,20 @@ h1 {
     height: 200px;
 }
 
-div.list-group li
-{
-  color: #a94442;
-  background-color: #f2dede;
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-  margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  font-size: 15px;
-  border-radius: 10px;
+div.list-group li {
+    color: #a94442;
+    background-color: #f2dede;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#abtn {
+    text-decoration: none;
+    color: white;
 }
