@@ -13,5 +13,9 @@ namespace Mlm.Domain.Entity
         public int Repost_Count { get; set; }
 
         public virtual ICollection<Comment> Comments { get; set; } 
+        public Item_Info()
+        {
+            Comments = new List<Comment>();
+        }
     }
 }

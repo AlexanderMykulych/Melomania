@@ -5,6 +5,9 @@
 }
 
 <div class="container">
-    @Html.Partial("UserInfo", Model)
+
+    <div class="row">
+        @Html.Partial("UserInfo", Model)
+        @{Html.RenderAction("Player", "Player");}
+    </div>
 </div>
-    

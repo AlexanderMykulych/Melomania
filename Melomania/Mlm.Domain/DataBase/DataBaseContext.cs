@@ -11,7 +11,8 @@ namespace Mlm.Domain.DataBase
 {
     public class DataBaseContext : DbContext, IRepository
     {
-        public DataBaseContext() : base("DefaultConnection")
+        public DataBaseContext()
+            : base("DefaultConnection")
         {
 
         }
@@ -38,8 +39,8 @@ namespace Mlm.Domain.DataBase
         public void Add(User user)
         {
             var item = Users.FirstOrDefault(x => x.Login == user.Login);
-            
-            if (item == null)
+
+            if (item != null)
                 return;
 
             Users.Add(user);
@@ -50,7 +51,7 @@ namespace Mlm.Domain.DataBase
         {
             var item = Musics.FirstOrDefault(x => x.Information.Name == music.Information.Name);
 
-            if (item == null)
+            if (item != null)
                 return;
 
             Musics.Add(music);

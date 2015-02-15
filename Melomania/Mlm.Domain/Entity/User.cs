@@ -18,5 +18,10 @@ namespace Mlm.Domain.Entity
         public Image Avatar { get; set; }
         public User_Info Information { get; set; }
 
+        public ICollection<Music> Musics { get; set; }
+        public User()
+        {
+            Musics = new List<Music>();
+        }
     }
 }

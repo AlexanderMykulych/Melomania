@@ -39,6 +39,7 @@ namespace Mlm.Web.Controllers
         {
             if (ModelState.IsValid && WebSecurity.Login(model.Login, model.Password, true))
             {
+                TempData["Message"] = "Привіт. Раді тебе бачити, " + model.Login + ".";
                 if (!Url.IsLocalUrl(returnUrl))
                     return RedirectToAction("Index", "Profile");
                 else
@@ -67,12 +68,14 @@ namespace Mlm.Web.Controllers
                         WebSecurity.CreateUserAndAccount(model.Login, model.Password,
                                 new
                                 {
+                                    Password = model.Password,
                                     Information_Name = model.Name,
                                     Information_Surname = model.Surname,
                                     Information_Address = model.Address
                                 });
 
                         WebSecurity.Login(model.Login, model.Password);
+                        TempData["Message"] = "Привіт. Надіємось тобі сподобається, " + model.Login;
                         return RedirectToAction("Index", "Profile");
                     }
                     catch (MembershipCreateUserException e)
@@ -110,8 +113,11 @@ namespace Mlm.Web.Controllers
         {
             var item = _db.users
                         .FirstOrDefault(x => x.Id == WebSecurity.CurrentUserId);
-            if(item == null)
+            if (item == null)
+            {
+                TempData["Message"] = "Нажаль, такого користувача не знайдено.";
                 return RedirectToAction("Manage", "Profile");
+            }
 
             item.Avatar.Picture = new byte[image.ContentLength];
 
@@ -119,6 +125,7 @@ namespace Mlm.Web.Controllers
             item.Avatar.MimeType = image.ContentType;
 
             _db.SaveChange();
+            TempData["Message"] = "Аватар успішно змінено.";
             return RedirectToAction("Index", "Profile");
         }
 

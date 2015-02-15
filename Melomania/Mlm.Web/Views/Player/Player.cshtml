@@ -1,0 +1,23 @@
+﻿<div class="col-lg-5">
+    <div class="player_header">
+        <div class="btn-group">
+            <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-play"></span></a>
+            <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-backward"></span></a>
+            <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-forward"></span></a>
+            <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-stop"></span></a>
+            <a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-pause"></span></a>
+            
+        </div>
+        @using (Html.BeginForm("AddMusic", "Player", FormMethod.Post, new { @class = "btn-group", enctype = "multipart/form-data" }))
+        {
+            <input type="file" class="btn btn-primary" name="music" />
+            <br />
+            <button type="submit" class="btn btn-primary" >
+                <span class="glyphicon glyphicon-plus"/>
+            </button>
+        }
+    </div>
+    <div class="player_body" style="height:60%;">
+
+    </div>
+</div>

@@ -140,3 +140,8 @@ hr.message-inner-separator
     width: 200px;
     z-index: 1;
 }
+
+.player_header{
+    margin: 10px;
+}
+
